@@ -1,0 +1,41 @@
+00:00:00.077 |I| Configuration LogValueChange: ResScale set to: 1
+00:00:00.098 |I| Configuration LogValueChange: ResScaleCustom set to: 1
+00:00:00.098 |I| Configuration LogValueChange: MaxAnisotropy set to: -1
+00:00:00.099 |I| Configuration LogValueChange: AspectRatio set to: Fixed16x9
+00:00:00.825 |I| Configuration LogValueChange: GraphicsBackend set to: Vulkan
+00:00:00.826 |I| Configuration LogValueChange: PreferredGpu set to: 
+00:00:00.829 |I| Configuration LogValueChange: Language set to: AmericanEnglish
+00:00:00.830 |I| Configuration LogValueChange: Region set to: USA
+00:00:00.830 |I| Configuration LogValueChange: TimeZone set to: UTC
+00:00:00.830 |I| Configuration LogValueChange: EnableDockedMode set to: True
+00:00:00.841 |I| Configuration LogValueChange: CustomVSyncInterval set to: 120
+00:00:00.841 |I| Configuration LogValueChange: EnableShaderCache set to: True
+00:00:00.841 |I| Configuration LogValueChange: EnableMacroHLE set to: True
+00:00:00.841 |I| Configuration LogValueChange: ScalingFilterLevel set to: 80
+00:00:00.842 |I| Configuration LogValueChange: EnablePtc set to: True
+00:00:00.842 |I| Configuration LogValueChange: EnableFsIntegrityChecks set to: True
+00:00:00.843 |I| Configuration LogValueChange: AudioBackend set to: SDL2
+00:00:00.843 |I| Configuration LogValueChange: AudioVolume set to: 1
+00:00:00.845 |I| Configuration LogValueChange: MemoryManagerMode set to: HostMappedUnsafe
+00:00:00.845 |I| Configuration LogValueChange: UseHypervisor set to: True
+00:00:00.846 |I| Configuration LogValueChange: LdnPassphrase set to: 
+00:00:00.846 |I| Configuration LogValueChange: LdnServer set to: 
+00:00:01.066 |N| Application PrintSystemInfo: Ryujinx Version: 1.2.81
+00:00:01.066 |N| Application PrintSystemInfo: .NET Runtime: .NET 9.0.1
+00:00:01.071 |N| Application Print: Operating System: Microsoft Windows 10.0.26100 (X64)
+00:00:01.071 |N| Application Print: CPU: AMD Ryzen 5 5500 ; 12 logical
+00:00:01.078 |N| Application Print: RAM: Total 31.9 GiB ; Available 23.8 GiB
+00:00:01.083 |N| Application PrintSystemInfo: Logs Enabled: Info, Warning, Error, Guest, Stub
+00:00:01.084 |N| Application PrintSystemInfo: Launch Mode: UserProfile
+00:00:11.498 |I| Application BeginUpdateAsync: Checking for updates.
+00:00:11.923 |E| Application BeginUpdateAsync: Response status code does not indicate success: 404 (Not Found).
+00:00:11.923 |E| Application CreateErrorDialog: An error occurred while trying to retrieve release information from GitHub. This may happen if a new release is currently being compiled by GitHub Actions. Please try again in a few minutes.
+00:00:46.675 |I| Application HandleKeysInstallation: Installing Keys
+00:00:48.622 |I| Application HandleKeysInstallation: New Keys file successfully installed.
+00:01:09.924 |E| Application HandleFirmwareInstallation: LibHac.Common.Keys.MissingKeyException: HeaderKey is empty. Cannot decrypt NCA headers.
+   at Ryujinx.HLE.FileSystem.ContentManager.VerifyFirmwarePackage(String firmwarePackage) in D:\a\Ryujinx\Ryujinx\src\Ryujinx.HLE\FileSystem\ContentManager.cs:line 661
+   at Ryujinx.Ava.UI.ViewModels.MainWindowViewModel.HandleFirmwareInstallation(String filename) in D:\a\Ryujinx\Ryujinx\src\Ryujinx\UI\ViewModels\MainWindowViewModel.cs:line 788
+00:01:28.004 |I| Application HandleKeysInstallation: Installing Keys
+00:01:31.166 |I| Application HandleKeysInstallation: New Keys file successfully installed.
+00:01:56.405 |I| Application HandleFirmwareInstallation: Installing firmware 19.0.1
+00:01:58.797 |I| Application HandleFirmwareInstallation: System version 19.0.1 successfully installed.
