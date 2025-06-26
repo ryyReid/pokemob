@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokemob - Switch Emulator Setup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <style>
+    /* Reidweb style inspired with new background */
+
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Orbitron', monospace, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      user-select: none;
+      min-height: 100vh;
+
+      /* Removed display:flex and overflow:hidden */
+      overflow-y: auto;
+
+      /* New background: vertical dark green gradient with subtle shapes */
+      background: linear-gradient(180deg, #001000 0%, #000000 100%);
+      position: relative;
+      color: #9eff99;
+    }
+
+    /* subtle abstract overlay pattern */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.03), transparent 50%);
+      mix-blend-mode: screen;
+      z-index: 0;
+    }
+
+    main {
+      background: #0c1a0cdd;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow:
+        0 0 12px #4fff4f88,
+        inset 0 0 20px #4fff4f44;
+      padding: 40px 50px;
+      backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      font-size: 3rem;
+      text-align: center;
+      text-shadow:
+        0 0 10px #4fff4f,
+        0 0 20px #4fff4f,
+        0 0 30px #4fff4f;
+      margin-bottom: 40px;
+      letter-spacing: 0.15em;
+    }
+
+    h2 {
+      color: #7fff7f;
+      text-shadow:
+        0 0 8px #4fff4faa;
+      margin-top: 2em;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #4fff4f88;
+      padding-bottom: 6px;
+      letter-spacing: 0.08em;
+    }
+
+    p, ul, ol {
+      color: #b8f7b8;
+      text-shadow: 0 0 4px #2fa52f88;
+    }
+
+    ul, ol {
+      padding-left: 1.3em;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    a.github-link,
+    a.download-link {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #123912;
+      color: #9eff99;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow:
+        0 0 10px #4fff4f,
+        inset 0 0 12px #8fff8f;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a.github-link:hover,
+    a.download-link:hover {
+      background-color: #1b601b;
+      box-shadow:
+        0 0 25px #6aff6a,
+        inset 0 0 15px #aaffaa;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #4fff4fbb;
+      text-align: center;
+      letter-spacing: 0.06em;
+      user-select: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer a {
+      color: #7fff7f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #b8f7b8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 25px 20px;
+      }
+      header {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>Pokemob - Switch Emulator Setup</header>
+
+    <section>
+      <p>
+        This project contains tools, configs, and mods related to running Pokémon games on a Nintendo Switch emulator
+        such as <strong>Ryujinx</strong> or <strong>Yuzu</strong>. It is meant for educational, testing, and performance
+        optimization purposes. You must own the original game and hardware to use these files legally.
+      </p>
+    </section>
+
+    <section>
+      <h2>Included Files</h2>
+      <ul>
+        <li>FPS mods (60FPS, etc.)</li>
+        <li>Visual enhancement mods (HD Textures, Disable Dynamic Resolution)</li>
+        <li>Config files for emulator</li>
+        <li>Readme and setup guides</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Downloads</h2>
+      <p>Get the latest mods and tools directly from the GitHub repository:</p>
+      <a
+        href="https://github.com/ryyReid/pokemob/releases/latest"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="download-link"
+      >Download Latest Release</a>
+      <p style="margin-top:1em;">
+        Or browse the full file list:<br />
+        <a
+          href="https://github.com/ryyReid/pokemob"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color:#9eff99; text-decoration:underline;"
+        >https://github.com/ryyReid/pokemob</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Use</h2>
+      <ol>
+        <li>Download the files from this repo.</li>
+        <li>Use with your emulator of choice (Ryujinx or Yuzu).</li>
+        <li>Place mods in the appropriate mod folder (check each emulator’s mod path).</li>
+        <li>Tweak settings for best performance on your hardware.</li>
+      </ol>
+      <p><strong>Make sure your firmware and keys are set up properly.</strong></p>
+    </section>
+
+    <section>
+      <h2>Requirements</h2>
+      <ul>
+        <li>A working emulator: Ryujinx or Yuzu</li>
+        <li>A legally dumped Pokémon game (e.g., Legends Arceus)</li>
+        <li>Firmware and prod.keys from your own Nintendo Switch</li>
+        <li>GPU that supports Vulkan or OpenGL 4.6</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tips</h2>
+      <ul>
+        <li>For higher FPS, use mods like "60FPS" or "Disable Dynamic Resolution"</li>
+        <li>Use HD texture packs for better visuals</li>
+        <li>Try Vulkan (Ryujinx) or OpenGL (Yuzu) depending on GPU compatibility</li>
+        <li>Adjust resolution scale for better performance or quality</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Credits</h2>
+      <p>
+        Mods and tools are sourced from public Switch modding communities. This repo organizes and distributes them for convenience only.
+      </p>
+    </section>
+
+    <section>
+      <h2>Disclaimer</h2>
+      <p>
+        This is <strong>NOT</strong> a piracy tool.<br />
+        You <strong>MUST</strong> own the game and console.<br />
+        This is for educational and personal testing purposes only.<br />
+        Do <strong>NOT</strong> use this project to illegally distribute games or keys.
+      </p>
+    </section>
+
+    <section>
+      <h2>Status</h2>
+      <p>
+        Version: v1.0<br />
+        Focus: Pokémon Legends Arceus mods and emulator setup
+      </p>
+      <p>
+        <a
+          href="https://github.com/ryyReid/pokemob/commits/pokemob"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link download-link"
+          style="margin-top: 10px; display: inline-block;"
+        >View Full Changelog on GitHub</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
