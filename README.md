@@ -9,7 +9,7 @@ https://github.com/ryyReid/pokemob
 📖 ABOUT
 ------------------------------
 This project contains tools, configs, and mods related to running
-Pokémon games on a Nintendo Switch emulator (such as Ryujinx or Yuzu).
+Pokémon games on a Nintendo Switch emulator (such as Ryujinx).
 
 It is meant for educational, testing, and performance optimization purposes.
 
@@ -18,9 +18,6 @@ It is meant for educational, testing, and performance optimization purposes.
 ------------------------------
 📦 INCLUDED FILES
 ------------------------------
-- FPS mods (60FPS, etc.)
-- Visual enhancement mods (HD Textures, Disable Dynamic Resolution)
-- Config files for emulator
 - Readme and setup guides
 
 ------------------------------
